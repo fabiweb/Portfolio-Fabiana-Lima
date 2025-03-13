@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body{
+    background-color: black;
+    color: #ffff;
+}
+
+
+.Secao {
+    padding: 100px 0;
+    padding-left: 50px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin-left: 50px;
+}
+ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+.principal{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    min-height: 85vh;
+}
+.principal h1 {
+    font-size: 80px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    letter-spacing: -4px;
+
+}
+.principal h1 span {
+     color: #4d7cfe;
+}
+.principal p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    max-width: 500px;
+    color: #bbb;
+    margin-bottom: 40px;   
+}
+.botao{
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #4d7cfe;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.titulo-secao {
+font-size: 42px;
+margin-bottom: 60px;
+position: relative;
+}
+.titulo-secao::after{
+content: "";
+position: absolute;
+left: 0;
+bottom: -15px;
+width: 100px;
+height: 4px;
+background-color: #4d7cfe;
+}
+
+
+
+.grade-projetos {
+    display: grid;
+    gap: 30px;
+   
+}
+
+.marios-projeto {
+    background-color: #161616;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.img-projeto{
+    width: 30%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.info-projeto {
+    padding: 10px;
+}
+
+.info-projeto p {
+    color: #bbb;
+    margin-bottom: 5px;
+    margin-right: 70%;
+    text-align: justify;
+
+}
+
+.info-projeto {
+    color: #4d7cfe;
+    font-weight: 500;
+}
+.sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.img-sobre {
+    height: 400px;
+    background-color: #161616;
+    border-radius: 10px;
+}
+
+.conteudo-sobre h2 {
+    margin-bottom: 30px;
+}
+
+.info-projetos p {
+    color: #bbb;
+    margin-bottom: 15px;
+  
+}
+
+
+.foto {
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 115, 230, 0.6); /* Brilho azul ao redor */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.foto:hover {
+    transform: scale(1.1); /* Aumenta um pouco ao passar o mouse */
+    box-shadow: 0 0 25px rgba(0, 115, 230, 0.8); /* Brilho mais intenso */
+}
+
+
+
+
+.habilidades {
+    margin-top: 10px;
+   
+}
+.tag-habilidades {
+    display: inline-block;
+    background-color: rgba(0, 115, 230, 0.5); /* Cor com transparência para imitar uma bolha */
+    color: white;
+    padding: 10px 20px; /* Tamanho maior para dar mais destaque */
+    border-radius: 50%; /* Tornar a bolha redonda */
+    margin-right: 10px;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(0, 115, 230, 0.3); /* Sombra suave para dar profundidade */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeitos de transição */
+}
+
+.tag-habilidades:hover {
+    transform: scale(1.1); /* Aumenta um pouco o tamanho ao passar o mouse */
+    box-shadow: 0 8px 20px rgba(0, 115, 230, 0.6); /* Aumenta a sombra ao passar o mouse */
+}
+
+.container {
+    display: block;
+    flex-direction: column;
+    gap: 20px; /* Adiciona espaçamento entre as seções */
+}
+
+
+
+.botoes-contatos{
+    display: flex;
+    flex-wrap: wrap ;
+    gap : 20px ;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.botao-contato{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-weight: 500;
+    min-width: 160px;
+}
+
+
+.efeito-cursor{
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out;
+}
+
+.efeito-cursor:hover {
+    transform: translateY(-10px);
+}
+
+.cursor {
+    pointer-events: none;
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgba(77, 124, 254, 0.5);
+    z-index: 99;
+    transform: translate(-50%, -50%);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px){
+   
+    header {
+        padding: 20px;
+    }
+
+    ul {
+        gap: 20px;
+        justify-content: flex-start;
+    }
+
+    .principal h1{
+        font-size: 50px;
+    }
+
+    .secao {
+        padding: 60px 20px;
+    }
+
+    .sobre{
+        grid-template-columns: 1fr;
+    }
+
+    .img-sobre {
+        height: auto;
+    }
+}
