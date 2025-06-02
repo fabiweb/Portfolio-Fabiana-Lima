@@ -42,7 +42,7 @@ ul {
 
 }
 .principal h1 span {
-     color: #4d7cfe;
+     color: #ebe846;
 }
 .principal p {
     font-size: 20px;
@@ -54,7 +54,7 @@ ul {
 .botao{
     display: inline-block;
     padding: 15px 30px;
-    background-color: #4d7cfe;
+    background-color: #ebe846;
     color: #fff;
     font-weight: bold;
     border-radius: 5px;
@@ -72,7 +72,7 @@ left: 0;
 bottom: -15px;
 width: 100px;
 height: 4px;
-background-color: #4d7cfe;
+background-color: #ebe846;
 }
 
 
@@ -109,7 +109,7 @@ background-color: #4d7cfe;
 }
 
 .info-projeto {
-    color: #4d7cfe;
+    color: #ebe846;
     font-weight: 500;
 }
 .sobre {
